@@ -1,0 +1,55 @@
+.signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  transform: scale(0.8); 
+  opacity: 0;
+  animation: scaleUp 0.5s forwards, fadeIn 1s forwards; 
+}
+
+.signup-container h2 {
+  text-align: center;
+}
+
+.signup-container form {
+  margin-top: 20px;
+}
+
+.signup-container input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 13px 30px;
+  background: aqua;
+  border-radius: 10px;
+  border: 1px solid aqua;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
